@@ -1,0 +1,84 @@
+body{
+	padding:20px 10px;
+	font-family: Georgia;
+	max-width:2000px;
+	margin:0 auto;
+	font-size: 1em;
+	background-color: #C7A0CA;
+}
+.content{
+	background-color:#79277F;
+	padding:20px 10px;
+	margin:20px;
+	font-family: Georgia;
+	border-radius:20px;
+}
+.chapter-title {
+	font-family: Georgia;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+.chapter{
+	font-family: Georgia;
+	background-color: #79277F;
+	border-radius: 30px;
+	color: #E0D0E1;
+	padding: 15px;
+	margin: 20px ;
+}
+.lesson {
+	font-family: Georgia;
+	background-color: #FFFFFF ;
+	border-radius: 20px;
+	color: #E0D0E1;
+	padding: 20px;
+	margin: 20px ;
+}
+.lesson-title{
+	font-family: Georgia;
+	padding:10px;
+	text-align: left;
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+}
+.notion-title{
+	font-family: Georgia;
+	padding:10px;
+	color:black;
+	font-weight: bold;
+	font-size: 20;
+}
+.notion-description{
+	font-family: Georgia;
+	font-size: 15px;
+	text-align: left;
+	color:black;
+	padding:5px;	
+}
+p {
+	margin: 15px 0;
+	text-align:justify;
+}
+ul{
+	list-style-type:square;
+}
+
+.form{
+	font-family: Georgia;
+	background-color: #79277F;
+	border-radius: 30px;
+	color: #E0D0E1;
+	padding: 15px;
+	margin: 20px ;
+}
+
+.comment{
+	font-family: Georgia;
+	background-color: #79277F;
+	border-radius: 30px;
+	color: #E0D0E1;
+	padding: 15px;
+	margin: 20px ;
+}
