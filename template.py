@@ -43,8 +43,9 @@ class Post(Handler):
 		comments_area.name = self.request.get('name')
 		comments_area.content = self.request.get('comments')
 		if not comments_area.content:
-			error = "Please try again as comments without content are not allowed";
-			self.render("page.html", notification=error)
+			self.redirect('/')
+		elif comments_area.content.isspace():
+			self.redirect('/')
 		else:
 			comments_area.put()
 			self.redirect('/')
