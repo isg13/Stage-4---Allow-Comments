@@ -36,16 +36,15 @@ class MainPage(Handler):
 		comments = comments_query.fetch()
 		self.render("page.html", comments=comments)
 
-class Post(webapp2.RequestHandler):
+class Post(Handler):
 	def post(self):
 		wall_name = self.request.get('wall_name',DEFAULT_WALL)
 		comments_area = CommentsArea(parent = wall_key(wall_name))
 		comments_area.name = self.request.get('name')
 		comments_area.content = self.request.get('comments')
-		if comments_area.content is None:
+		if not comments_area.content:
 			error = "Please try again as comments without content are not allowed";
 			self.render("page.html", notification=error)
-			#self.reponse.out.write("Comment cannot be empty")
 		else:
 			comments_area.put()
 			self.redirect('/')
